@@ -38,7 +38,7 @@ const LoginScreen = () => {
                   className="loginScreen__getstarted"
                   onClick={() => setSignin(true)}
                 >
-                  GET STARTED
+                  Get Started
                 </button>
               </form>
             </div>

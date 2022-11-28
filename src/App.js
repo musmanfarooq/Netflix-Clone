@@ -6,10 +6,12 @@ import LoginScreen from "./Components/Screens/LoginScreen";
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
+import ProfileScreen from "./Components/Screens/ProfileScreen";
 
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
+  // const user = null;
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
@@ -39,6 +41,7 @@ function App() {
         <div>
           <Routes>
             <Route exact path="/" element={<HomeScreen />}></Route>
+            <Route path="/profile" element={<ProfileScreen />}></Route>
           </Routes>
         </div>
       )}
