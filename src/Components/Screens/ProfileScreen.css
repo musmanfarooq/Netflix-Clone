@@ -35,23 +35,31 @@
   flex: 1;
 }
 
+.profileScreen__plans{
+  margin-top: 10px;
+}
+
 .profileScreen__detail h2 {
   background-color: gray;
   padding: 15px;
   font-size: 15px;
-  margin-left: 20px;
+}
+
+.profileScreen__detail h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 10px;
 }
 
 .profileScreen__signout {
   padding: 10px 20px;
   font-size: 1rem;
   width: 100%;
-  margin-left: 20px;
   margin-top: 5%;
   background-color: #e50914;
   color: #fff;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .profileScreen__signout:hover {
