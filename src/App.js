@@ -24,7 +24,7 @@ function App() {
         );
       } else {
         console.log("islogout");
-        dispatch(logout);
+        dispatch(logout());
       }
     });
 
