@@ -11,7 +11,6 @@ import ProfileScreen from "./Components/Screens/ProfileScreen";
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
-  // const user = null;
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
@@ -23,7 +22,6 @@ function App() {
           })
         );
       } else {
-        console.log("islogout");
         dispatch(logout());
       }
     });
